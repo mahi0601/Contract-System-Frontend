@@ -1,0 +1,47 @@
+/* Base styles */
+.contract-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .contract-table th,
+  .contract-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .contract-table th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contract-row.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Highlight animation */
+  @keyframes highlight {
+    from {
+      background-color: #ffeb3b;
+    }
+    to {
+      background-color: transparent;
+    }
+  }
+  
+  .contract-row.highlight {
+    animation: highlight 1.5s ease-in-out;
+  }
